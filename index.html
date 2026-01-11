@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEATHER API</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body >
+    <div class="image-wrapper">
+        <div class="whether">
+            <h1>WEATHER API</h1>
+            <p>Weather Search City</p>
+                <div class="input-panel">
+                    <input id="city" placeholder="Enter the city name" type="text">
+                        <div class="search">
+                            <button>search</button>
+                        </div>
+                </div>
+
+                    <div class="weather-icon">
+                        <img id="iconImg" />
+                        <p id="conditionName"></p>
+                        <p class="weather-msg" id="message"></p>
+                    </div>
+
+
+                    
+                    <!-- Loader Spinner -->
+                <div id="loader" style="display:none; text-align:center; margin-top:20px;">
+                    <i class="fas fa-spinner fa-spin fa-3x"></i>
+                </div>
+
+                
+                <div class="msg">
+                    <p>This website shows today's, tomorrow's, and the day after tomorrow's weather . <br><i id="italic">You just need to enter the name of the village in the input box.</i></p>
+                </div>
+
+                <div class="current_location">
+                    <button id="locationBtn">
+                        User Current Location 
+                    </button>
+                    <div class="clmsg">
+                        <p id="loc"></p>
+                    </div>
+                </div>
+                
+                <div class="convert">
+                    <button id="unitToggle">°C → °F</button>
+                    <p id="tempResult"></p>
+                </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

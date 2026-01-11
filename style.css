@@ -1,0 +1,458 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html, body 
+{
+    height: 100%;
+}
+
+body 
+{
+    margin: 0;
+    background-image: url("weatherbg2.jpg");
+    background-size: cover;        
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  
+}
+
+
+.image-wrapper {
+    position: relative;
+
+}
+
+.whether
+{
+    position: absolute;
+    left: 50vh;
+    top: 0.4vh;
+    bottom: 80px;
+    width: 700px;
+    height: 750px;
+    background-color:#787e7db1 ;
+    border-radius: 20px;
+}
+
+
+
+
+
+.whether p,.input-panel
+{
+    margin-left: 15vh;
+}
+
+.whether h1
+{
+    margin-top: 2vh;
+    margin-left: 30vh;
+    color: #cfdc6e;
+}
+.whether p
+{
+    margin-top: 4vh;
+}
+
+
+.input-panel input
+{
+    width: 500px;
+    height: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+#city
+{
+    font-size:90%;
+    color: #4e6ce1;
+}
+
+.input-panel
+{
+    display: flex;
+    border: 1px solid black;
+    width: 69%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.search  button
+{
+    width: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 20px;
+    background-color: #febd68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f1111;
+    cursor: pointer;
+    border: none;
+}
+
+#italic
+{
+    font-weight:bolder;
+    color: #eeac1d;
+}
+
+.weather-icon
+{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.msg p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    width: 60%;
+    margin-left: 20vh;
+    color:#bd1f59 ;
+}
+
+
+.weather-icon
+{
+    width: 100px;
+    height: 30px;
+    margin-left: 550px;
+    bottom: 0vh;
+}
+
+#weatherIcon img
+{
+    width: 70px; 
+}
+
+ .weather-icon
+{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-icon img
+{
+    width: 70px;
+    display: flex;
+    direction-flow ;
+}
+
+#conditionName
+{
+    font-weight: bold;
+    color: #eeac1d;
+    margin-top: 5px;
+    margin-right:1vh ;
+}
+
+.weather-msg
+{
+    margin-top: 10px;
+    font-weight: 600;
+    color: #bd1f59;
+    white-space: pre-line;
+}
+
+
+
+
+#loader 
+{
+    text-align: center;
+    margin-top: 20px;
+    color: #540863;
+}
+
+
+.current_location
+{
+margin-top: 2vh;
+margin-left: 20vh;
+height: auto;
+width: 500px;
+
+display: flex;
+justify-self:flex-start;
+align-items:end;
+}
+
+#locationBtn
+{
+    margin-bottom:1.9vh ;
+    margin-left: 0.7vh;
+    width: 150px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 40px;
+    border: 1px solid rgb(40, 37, 35);
+    background-color:#6d8ea6;
+    color: #ebb931;
+    font-weight: 600;
+    
+}
+.clmsg
+{
+    
+    margin-top: 1.9vh;
+    font-weight: 600;
+    width:auto;
+    color: #c2c4c5;
+}
+
+
+.convert
+{
+    margin-left: 21vh;
+    height: auto;
+    width: 800px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: end;
+
+}
+#unitToggle 
+{
+    margin-top: 0px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: cyan;
+    font-weight: 400;
+}
+
+#tempResult
+{
+    margin-left: 195px;
+    font-weight: 500;
+}
+
+
+/* Media Queries : */
+
+@media (max-width: 480px) 
+{
+    .convert
+    {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #unitToggle
+    {
+        width: 70%;
+        text-align: center;
+    }
+
+    #tempResult
+    {
+        margin-left: 0;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+
+    .weather-msg
+    {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .weather-icon
+    {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .whether
+    {
+        width: 92%;
+        height: 750px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 3vh;
+        padding: 15px;
+        background-color: #787e7db1;
+    }
+
+    .whether h1
+    {
+        margin-left: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .whether p
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .input-panel
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .input-panel input
+    {
+        width: 100%;
+    }
+
+
+    .msg p
+    {
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .current_location
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #locationBtn
+    {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .clmsg
+    {
+        text-align: center;
+    }
+
+    .convert
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #tempResult
+    {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) 
+{
+
+    .whether
+    {
+        width: 80%;
+        height: 750px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 6vh;
+        padding: 20px;
+        background-color: #787e7db1;
+
+    }
+
+    .whether h1
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .weather p
+    {
+        font-weight: 400;
+    }
+    .input-panel 
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search button
+    {
+        width: 100px;
+    }
+
+    .msg p
+    {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .current_location,
+    .convert
+    {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .convert
+    {
+    width: 80%;
+    margin-left: 1vh;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    #unitToggle
+    {
+        width: 30%;
+        text-align: center;
+    }
+
+    #tempResult
+    {
+        margin-left: 15vh;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 769px) 
+{
+
+    .whether
+    {
+        width: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 8vh;
+    }
+}
+
+
