@@ -14,12 +14,13 @@ function login()
     localStorage.setItem("username", user);
 
     // Go to weather page
-    window.location.href = "index.html";
+    window.location.href = "weather.html";
 }
 
 
 function logout()
 {
     localStorage.clear();
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
+
