@@ -110,25 +110,7 @@ button:hover
         margin-right: 65vh;
     }
 
-    .main_login 
-{
-    position: relative;
-    width:auto;
-    height: auto;
-}
-
-
-
-.login_img
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
+ 
 }
 
 
@@ -151,6 +133,7 @@ button:hover
         margin-right: 65vh;
     }
 }
+
 
 
 
