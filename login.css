@@ -101,3 +101,34 @@ button:hover
 {
     box-shadow:0 0 15px cyan;
 }
+
+@media (max-width: 480px)
+{
+    .card-wrapper
+    {
+        width: fit-content;
+        margin-right: 65vh;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) 
+{
+.card-wrapper
+    {
+        width: fit-content;
+        margin-right: 65vh;
+    }
+    
+}
+
+
+@media (min-width:769px) 
+{
+        .card-wrapper
+    {
+        width: fit-content;
+        margin-right: 65vh;
+    }
+}
+
