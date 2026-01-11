@@ -250,7 +250,7 @@ align-items:end;
 
 /* Media Queries : */
 
-@media (max-width: 480px) 
+@media (max-width: 480px)
 {
     .convert
     {
@@ -284,6 +284,7 @@ align-items:end;
 
     .weather-icon
     {
+        flex-direction: row;
         margin: 10px auto;
         text-align: center;
     }
@@ -334,6 +335,7 @@ align-items:end;
 
     .current_location
     {
+        width:85%;
         flex-direction: column;
         align-items: center;
         margin-left: 0;
@@ -409,11 +411,21 @@ align-items:end;
         text-align: center;
     }
 
-    .current_location,
-    .convert
+    .weather-icon
     {
-        margin-left: 0;
+        width: 1%;
+        flex-direction: row-reverse;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .current_location    {
+        width: 100%;
+        margin-left: 0px;
+        /* flex-direction: row-reverse; */
+        display: flex;
         justify-content: center;
+        /* justify-content: center; */
     }
 
     .convert
@@ -422,8 +434,7 @@ align-items:end;
     margin-left: 1vh;
     margin-top: 15px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
     }
 
     #unitToggle
