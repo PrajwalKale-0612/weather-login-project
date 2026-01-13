@@ -106,8 +106,12 @@ button:hover
 {
     .card-wrapper
     {
-        width: fit-content;
-        margin-right: 65vh;
+        /* width: fit-content;
+        margin-right: 65vh; */
+        width: auto;
+        margin-right: 50vh;
+        margin-left: 5vh;
+        margin-top: 7vh;
     }
 
  
@@ -133,6 +137,7 @@ button:hover
         margin-right: 65vh;
     }
 }
+
 
 
 
