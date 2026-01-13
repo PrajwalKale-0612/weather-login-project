@@ -11,10 +11,7 @@ function isStrongPassword(password)
     let number=password.match(/[0-9]/g);
 
     let symbol=password.match(/[@$!%*?&#]/g) || [];
-    console.log(number.length);
-    console.log(upper.length);
-    console.log(lower.length);
-    console.log(symbol.length);
+    
 
     if (upper.length < 2 || lower.length<2 || number.length<2||symbol.length<2) 
     {
@@ -54,6 +51,7 @@ function logout()
     localStorage.clear();
     window.location.href = "index.html";
 }
+
 
 
 
