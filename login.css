@@ -108,10 +108,10 @@ button:hover
     {
         /* width: fit-content;
         margin-right: 65vh; */
-        width: auto;
+        width: 100%;
         margin-right: 50vh;
         margin-left: 5vh;
-        margin-top: 7vh;
+        margin-top: 20vh;
     }
 
  
@@ -137,6 +137,7 @@ button:hover
         margin-right: 65vh;
     }
 }
+
 
 
 
