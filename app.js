@@ -1,6 +1,6 @@
 if(localStorage.getItem("isLoggedIn") !== "true")
 {
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
 
 const BASE_URL="https://api.open-meteo.com/v1/forecast?";
@@ -213,6 +213,7 @@ input.addEventListener("keydown",(e)=>
 
 const lBtn=document.getElementById("locationBtn");
 lBtn.addEventListener("click",getCityFromLocation);
+
 
 
 
