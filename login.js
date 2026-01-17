@@ -1,21 +1,25 @@
-function isStrongPassword(password) {
-    if (password.length < 8) return false;
-
-    let upper = 0, lower = 0, number = 0, symbol = 0;
-
-    for (let i = 0; i < password.length; i++) {
-        let ch = password[i];
-
-        if (ch >= 'A' && ch <= 'Z') upper++;
-        else if (ch >= 'a' && ch <= 'z') lower++;
-        else if (ch >= '0' && ch <= '9') number++;
-        else if ("@$!%*?&#".includes(ch)) symbol++;
-    }
-
-    if (upper < 2 || lower < 2 || number < 2 || symbol < 2) {
+function isStrongPassword(password)
+{
+    if (password.length<8) 
+    {
         return false;
     }
+    let upper=password.match(/[A-Z]/g);
 
+    let lower=password.match(/[a-z]/g);
+
+    let number=password.match(/[0-9]/g);
+
+    let symbol=password.match(/[@$!%*?&#]/g) || [];
+    console.log(number.length);
+    console.log(upper.length);
+    console.log(lower.length);
+    console.log(symbol.length);
+
+    if (upper.length < 2 || lower.length<2 || number.length<2||symbol.length<2) 
+    {
+        return false;
+    }
     return true;
 }
 
@@ -25,12 +29,23 @@ function login()
     const user = document.getElementById("user").value;
     const pass = document.getElementById("pass").value;
 
+    let savedUser = localStorage.getItem("registeredUser");
+    let savedPass = localStorage.getItem("registeredPass");
+
+    if (user === savedUser && pass === savedPass) {
+        localStorage.setItem("isLoggedIn", "true");
+        window.location.href = "weather.html";
+    } else {
+        alert("Invalid credentials");
+        return;
+    }
+
     if(user === "" || pass === "")
     {
         confirm("Please fill all fields");
         return;
     }
-
+    
     if (!isStrongPassword(pass)) 
     {
         confirm("Password must contain at least 2 uppercase, 2 lowercase, 2 numbers, 2 symbols and minimum 8 characters");
@@ -42,7 +57,7 @@ function login()
     localStorage.setItem("username", user);
 
     // Go to weather page
-    window.location.href = "weather.html";
+    window.location.href = "index.html";
 }
 
 
@@ -53,7 +68,17 @@ function logout()
 }
 
 
+// function login() {
+//     let user = document.getElementById("user").value;
+//     let pass = document.getElementById("pass").value;
 
+//     let savedUser = localStorage.getItem("registeredUser");
+//     let savedPass = localStorage.getItem("registeredPass");
 
-
-
+//     if (user === savedUser && pass === savedPass) {
+//         localStorage.setItem("isLoggedIn", "true");
+//         window.location.href = "weather.html";
+//     } else {
+//         alert("Invalid credentials");
+//     }
+// }
