@@ -68,17 +68,3 @@ function logout()
 }
 
 
-// function login() {
-//     let user = document.getElementById("user").value;
-//     let pass = document.getElementById("pass").value;
-
-//     let savedUser = localStorage.getItem("registeredUser");
-//     let savedPass = localStorage.getItem("registeredPass");
-
-//     if (user === savedUser && pass === savedPass) {
-//         localStorage.setItem("isLoggedIn", "true");
-//         window.location.href = "weather.html";
-//     } else {
-//         alert("Invalid credentials");
-//     }
-// }
