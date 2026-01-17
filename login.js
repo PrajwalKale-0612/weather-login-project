@@ -49,8 +49,9 @@ function login()
 function logout()
 {
     localStorage.clear();
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
+
 
 
 
