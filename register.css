@@ -44,10 +44,10 @@ h2{
     .reg-div
     {
         width: 95%;
-        height: 250px;
+        height: 300px;
         border-radius: 20px;
-        margin-top: 10vh;
-        margin-left: 0px;
+        margin-top: 15vh;
+        margin-right: 50px;
         background-color: #D8125B;
         
     }
@@ -147,4 +147,5 @@ h2{
     }
 }
     
+
 
