@@ -153,15 +153,6 @@ button
     }
 }
 
-@media (max-width: 480px)
-{
-    
-    .card
-    {
-        width: auto;
-        margin-right:65vh;
-       
-    }
 
     @media (max-width: 480px)
 {
@@ -178,10 +169,14 @@ button
         width: 90%;
 
     }
-
-   
+    .login_form
+    {
+        margin-left: 15px;
+    }
+    
 }
 
    
 }
+
 
