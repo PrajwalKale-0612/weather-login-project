@@ -163,5 +163,25 @@ button
        
     }
 
+    @media (max-width: 480px)
+{
+    
+    .card
+    {
+        width: 95%;
+        margin-right:65vh;
+       
+    }
+
+    .input_group,.button_group
+    {
+        width: 90%;
+
+    }
+
    
 }
+
+   
+}
+
