@@ -1,22 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login</title>
-<link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-<div class="main_login">
-    <img src="login1.jpeg" class="login_img">
-    <div class="card-wrapper">
+
+<div class="login_form_container">
+    <div class="login_form">
+        <h2>Login</h2>
+
         <div class="card">
-            <h2>Login</h2>
-            <input type="text" id="user" placeholder="Username">
-            <input type="password" id="pass" placeholder="Password">
-            <button onclick="login()">Login</button>
-            <button onclick="logout()">Logout</button>
+            <div class="input_group">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username" class="input_text" id="user" autocomplete="off">
+            </div>
+            
+            <div class="input_group">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="Password" class="input_text"  id="pass" autocomplete="off">
+            </div>
+            
+            <div class="button_group" id="login_button">
+                <!-- <a>Login</a> -->
+                <button onclick="login()">Login</button>
+            </div>
+            <div class="button_group" id="logout_button">
+                <!-- <a>Logout</a> -->
+                <button onclick="logout()">Logout</button>
+            </div>
         </div>
+
     </div>
 </div>
 
