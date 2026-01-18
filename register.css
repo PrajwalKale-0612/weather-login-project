@@ -35,7 +35,7 @@ h2{
 
 
 
-@media (max-width: 380px)
+@media (max-width: 480px)
 {
     body
     {
@@ -81,7 +81,7 @@ h2{
 }
 
 
-@media (min-width: 381px) and (max-width: 768px) 
+@media (min-width: 481px) and (max-width: 768px) 
 {
     body
     {
@@ -145,3 +145,4 @@ h2{
     }
 }
     
+
