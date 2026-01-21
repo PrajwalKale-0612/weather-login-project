@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -248,6 +249,65 @@ align-items:end;
 }
 
 
+.Exit {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background: #1f2937;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6em;
+  cursor: pointer;
+ 
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0.6em;
+  margin-top: -0.25em;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.label {
+  position: relative;
+  top: -1px;
+}
+
+.transition {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 500ms;
+  background-color: red;
+  /* background-color: rgba(16, 185, 129, 0.6); */
+  border-radius: 9999px;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Exit:hover .transition {
+  width: 14em;
+  height: 14em;
+}
+
+.Exit:active {
+  transform: scale(0.97);
+}
+
+
+
 /* Media Queries : */
 
 @media (max-width: 480px)
@@ -264,7 +324,7 @@ align-items:end;
 
     #unitToggle
     {
-        width: 70%;
+        width: 80%;
         text-align: center;
     }
 
@@ -346,10 +406,11 @@ align-items:end;
         width: 100%;
         margin-bottom: 10px;
     }
-
+    
     .clmsg
     {
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .convert
@@ -362,8 +423,16 @@ align-items:end;
     #tempResult
     {
         margin-left: 0;
-        margin-top: 8px;
+        margin-top: 5px;
     }
+
+    .Exit
+    {
+        width: auto;
+        margin-top: 1vh;
+        margin-left: 3vh;
+    }
+    
 }
 
 
@@ -450,6 +519,12 @@ align-items:end;
         text-align: center;
     }
 
+    .Exit
+    {
+        width: auto;
+        margin-top: 3vh;
+    }
+
 }
 
 
@@ -463,6 +538,12 @@ align-items:end;
         left: 50%;
         transform: translateX(-50%);
         top: 8vh;
+    }
+
+    .Exit
+    {
+        margin-left: 55vh;
+        margin-top: 7vh;
     }
 }
 
