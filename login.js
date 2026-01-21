@@ -1,3 +1,4 @@
+
 function isStrongPassword(password)
 {
     if (password.length<8) 
@@ -11,10 +12,7 @@ function isStrongPassword(password)
     let number=password.match(/[0-9]/g);
 
     let symbol=password.match(/[@$!%*?&#]/g) || [];
-    console.log(number.length);
-    console.log(upper.length);
-    console.log(lower.length);
-    console.log(symbol.length);
+    
 
     if (upper.length < 2 || lower.length<2 || number.length<2||symbol.length<2) 
     {
@@ -40,18 +38,16 @@ function login()
         return;
     }
 
-    if(user === "" || pass === "")
-    {
-        confirm("Please fill all fields");
-        return;
-    }
+    
     
     if (!isStrongPassword(pass)) 
     {
         confirm("Password must contain at least 2 uppercase, 2 lowercase, 2 numbers, 2 symbols and minimum 8 characters");
-        
         return;
     }
+
+
+
     // Save login session
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("username", user);
@@ -64,8 +60,6 @@ function login()
 function logout()
 {
     localStorage.clear();
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
-
-
 
