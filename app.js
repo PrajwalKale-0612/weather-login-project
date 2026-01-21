@@ -1,7 +1,27 @@
+function logout() {
+    alert("Logout successful");
+    window.location.href = "login.html";
+}
+
+
+window.onload = function () {
+    let user = localStorage.getItem("registeredUser");
+
+    if (!user) {
+        alert("Please login first");
+        window.location.href = "login.html";
+    }
+};
+
+
+
 if(localStorage.getItem("isLoggedIn") !== "true")
 {
     window.location.href = "login.html";
 }
+
+
+
 
 const BASE_URL="https://api.open-meteo.com/v1/forecast?";
 const BASE_URL2="https://api.openweathermap.org/data/2.5/weather?q=";
@@ -213,7 +233,5 @@ input.addEventListener("keydown",(e)=>
 
 const lBtn=document.getElementById("locationBtn");
 lBtn.addEventListener("click",getCityFromLocation);
-
-
 
 
